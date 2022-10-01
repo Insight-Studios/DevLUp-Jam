@@ -17,5 +17,5 @@ public class NumberOne : MonoBehaviour
         
     }
 
-    private void OnMouseUp() => GameManager.Instance.NextLevel();
+    private void OnMouseUpAsButton() => GameManager.Instance.NextLevel();
 }
