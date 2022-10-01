@@ -8,16 +8,16 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2135260045314369132}
+  - component: {fileID: 8733643902239931628}
   - component: {fileID: 8613303519771157477}
   m_Layer: 0
   m_Name: Game Manager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2135260045314369132
+--- !u!4 &8733643902239931628
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,3 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a2804f7debcd6946a5469f8489edc4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeTime: 1
