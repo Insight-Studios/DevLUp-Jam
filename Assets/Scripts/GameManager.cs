@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] float fadeTime;
 
+    [SerializeField] NumberOne numberOnePrefab;
+
     public static GameManager Instance { get; private set; }
 
     public static GameObject UIMiniGame { get; private set; }
+    public static NumberOne NumberOnePrefab { get => Instance.numberOnePrefab; }
 
     int score = 0;
     double timer = 0;
@@ -55,7 +58,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(nextSceneIndex);
         }
 
-        yield return null;
+        yield return new WaitForSecondsRealtime(fadeTime);
 
         UIMiniGame = GameObject.FindWithTag("MainCanvas");
         levelOverlay = UIMiniGame.transform.Find("NextLevel").GetComponent<Image>();
