@@ -25,10 +25,9 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         } else
         {
-            DontDestroyOnLoad(this);
-            UIMiniGame = GameObject.FindWithTag("MainCanvas");
-            UIMiniGame.transform.Find("NextLevel").GetComponent<Image>().CrossFadeAlpha(0f, 0f, true);
             Instance = this;
+            DontDestroyOnLoad(this);
+            StartCoroutine(StartLevel());
         }
     }
 
@@ -42,6 +41,22 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    IEnumerator StartLevel()
+    {
+        UIMiniGame = GameObject.FindWithTag("MainCanvas");
+        var levelOverlay = UIMiniGame.transform.Find("NextLevel").GetComponent<Image>();
+        levelOverlay.CrossFadeAlpha(1f, 0f, false);
+
+        var levelNumber = UIMiniGame.transform.Find("LevelNumber").GetComponent<Text>();
+        levelNumber.text = SceneManager.GetActiveScene().buildIndex > 1 ? (SceneManager.GetActiveScene().buildIndex - 1).ToString() : "";
+
+        yield return new WaitForSecondsRealtime(fadeTime);
+
+        levelOverlay.CrossFadeAlpha(0f, fadeTime, false);
+
+        yield return new WaitForSecondsRealtime(fadeTime);
     }
 
     private IEnumerator NextLevelRoutine()
@@ -58,13 +73,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(nextSceneIndex);
         }
 
-        yield return new WaitForSecondsRealtime(fadeTime);
+        yield return null;
 
-        UIMiniGame = GameObject.FindWithTag("MainCanvas");
-        levelOverlay = UIMiniGame.transform.Find("NextLevel").GetComponent<Image>();
-
-        levelOverlay.CrossFadeAlpha(0f, fadeTime, false);
-        yield return new WaitForSecondsRealtime(fadeTime);
+        yield return StartLevel();        
     }
 
     public void NextLevel()
