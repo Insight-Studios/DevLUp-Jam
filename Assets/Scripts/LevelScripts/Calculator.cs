@@ -15,19 +15,26 @@ public class Calculator : MonoBehaviour
             return display.text.Substring(16, display.text.Length - 9 - 16);
         } set
         {
+            while (ones.Count > 0)
+            {
+                Destroy(ones[ones.Count - 1].gameObject);
+                ones.RemoveAt(ones.Count - 1);
+            }
+
             int i = value.IndexOf('1');
             while (i != -1 && i < value.Length)
             {
                 ones.Add(Instantiate<NumberOne>(
                     GameManager.NumberOnePrefab, 
-                    Vector3.up * 4 + Vector3.right * (4f - value.Length + i),
+                    transform.position + Vector3.up * 4 + Vector3.right * (4f - value.Length + i),
                     Quaternion.identity,
                     transform
                 ));
                 ones[ones.Count - 1].transform.localScale *= 0.5f;
                 i = value.IndexOf('1', i + 1);
             }
-            display.text = "<mspace=1.125em>" + value.Replace('1', ' ') + "</mspace>";
+
+            display.text = "<mspace=1.125em>" + value.Replace('1', '_') + "</mspace>";
         }
     }
 
