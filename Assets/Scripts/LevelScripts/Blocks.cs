@@ -56,7 +56,11 @@ public class Blocks : MonoBehaviour
         {
             print("can't move there");
         }
-        print(DidWin());
+        
+        if (DidWin())
+        {
+            GameManager.Instance.NextLevel();
+        }
     }
 
     bool DidWin()
