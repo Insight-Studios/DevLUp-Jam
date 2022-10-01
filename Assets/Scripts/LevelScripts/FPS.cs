@@ -57,6 +57,8 @@ public class FPS : MonoBehaviour
         print(wave);
         if (wave == waves.Length)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             GameManager.Instance.NextLevel();
             return;
         }
