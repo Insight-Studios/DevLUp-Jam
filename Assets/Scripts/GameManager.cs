@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-
     int score = 0;
     double timer = 0;
 
@@ -36,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
+        print("LEVEL COMPLETE");
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (SceneManager.sceneCountInBuildSettings > nextSceneIndex)
         {
