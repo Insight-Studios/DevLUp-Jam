@@ -17,5 +17,9 @@ public class NumberOne : MonoBehaviour
         
     }
 
-    private void OnMouseUpAsButton() => GameManager.Instance.NextLevel();
+    private void OnMouseUpAsButton()
+    {
+        GetComponent<MeshRenderer>().material.color = Color.green;
+        GameManager.Instance.NextLevel();
+    }
 }

@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/SplashScreen.unity
     guid: b5b23305cc1407c44b6ece3a1e7fa22f
@@ -12,15 +15,45 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 4b7ff85d0899afe489a99380c6744cf8
   - enabled: 1
+    path: Assets/Scenes/MiniGames/TextNumber.unity
+    guid: a4aab4cc38997be4280cae56cfe71f4e
+  - enabled: 1
     path: Assets/Scenes/MiniGames/Run.unity
     guid: e5e7e59984f11654e8447f097d9f7870
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Calculator.unity
+    guid: a29c1b1ef60438143aaedb362f1f3236
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Doors.unity
+    guid: d0fe597f82e0fbc469135ffe070dc295
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Timer.unity
+    guid: 17693311793146142b948c504a052304
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/TextWord.unity
+    guid: c9145d9dff2f2b8479212301be5304de
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Blocks.unity
+    guid: 4e50ecc3b904eb945a1f42b3013e09e7
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Draw.unity
+    guid: 8f2f405fd1aa54640b9c4fa21eb31bd9
   - enabled: 1
     path: Assets/Scenes/MiniGames/Find.unity
     guid: ce3f0137d7823e84f838889ba2010f16
   - enabled: 1
-    path: Assets/Scenes/MiniGames/Art.unity
-    guid: ce4ea296a9aa462418e9e9fa1c15af98
+    path: Assets/Scenes/MiniGames/Level.unity
+    guid: 4d71cc74e81aca844829e4563e09bc02
   - enabled: 1
-    path: Assets/Scenes/MiniGames/Doors.unity
-    guid: d0fe597f82e0fbc469135ffe070dc295
+    path: Assets/Scenes/MiniGames/Countdown.unity
+    guid: c62c469773d14ce40ad8aceac9543191
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/CountdownRandom.unity
+    guid: bde66c841e4d2e045ad1076b61d6b83d
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Maze.unity
+    guid: 954e642faee5d6549a2f4d1ab2cab506
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/FPS.unity
+    guid: 5539cbd9ad757f648aadc4c6112ce8b8
   m_configObjects: {}
