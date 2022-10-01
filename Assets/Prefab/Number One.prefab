@@ -46,7 +46,7 @@ TextMesh:
   m_OffsetZ: 0
   m_CharacterSize: 0.25
   m_LineSpacing: 1
-  m_Anchor: 0
+  m_Anchor: 4
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 100
@@ -110,7 +110,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.7, y: -1.348359}
+  m_Offset: {x: -0.052778155, y: 0.033791065}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -121,7 +121,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4, y: 2.504217}
+  m_Size: {x: 1.1778688, y: 2.2080417}
   m_EdgeRadius: 0
 --- !u!114 &4211339817393907162
 MonoBehaviour:
