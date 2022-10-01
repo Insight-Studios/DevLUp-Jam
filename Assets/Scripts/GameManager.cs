@@ -57,6 +57,10 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(nextSceneIndex);
         }
+        else
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
 
         yield return new WaitForSecondsRealtime(fadeTime);
 
