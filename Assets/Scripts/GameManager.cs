@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         levelOverlay.CrossFadeAlpha(1f, 0f, false);
 
         var levelNumber = UIMiniGame.transform.Find("LevelNumber").GetComponent<Text>();
-        levelNumber.text = SceneManager.GetActiveScene().buildIndex > 1 ? (SceneManager.GetActiveScene().buildIndex - 1).ToString() : "";
+        levelNumber.text = SceneManager.GetActiveScene().buildIndex > 0 ? (SceneManager.GetActiveScene().buildIndex).ToString() : "";
         if (levelNumber.text == "10")
         {
             levelNumber.text = "  0";
@@ -59,6 +59,13 @@ public class GameManager : MonoBehaviour
         else if (levelNumber.text != "1")
         {
             levelNumber.text = levelNumber.text.Replace('1', Convert.ToChar(65533));
+        }
+
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            levelOverlay.CrossFadeAlpha(0f, 0f, false);
+            levelNumber.text = "";
+            yield break;
         }
 
         yield return new WaitForSecondsRealtime(fadeTime);
