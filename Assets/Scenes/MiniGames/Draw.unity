@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c4c5bc9340c924f9482dcff0a81f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cusor: {fileID: 2800000, guid: feb5aeaed159a264e8705926a2c0ea13, type: 3}
   pixelGO: {fileID: 7105008728550183613, guid: 8c2001d331e42a04fb2611799b087222, type: 3}
   imageDim: {x: 75, y: 75}
 --- !u!4 &1586939014

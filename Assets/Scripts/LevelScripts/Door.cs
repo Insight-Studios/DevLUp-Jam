@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-
-    Renderer component;
-
     [SerializeField] Doors doors;
-
-    private void Start()
-    {
-        component = GetComponent<Renderer>();
-    }
+    [SerializeField] Sprite[] sprites;
 
     public void Open()
     {
-        component.enabled = false;
+        GetComponent<SpriteRenderer>().sprite = sprites[1];
     }
 
     public void Close()
     {
-        component.enabled = true;
+        GetComponent<SpriteRenderer>().sprite = sprites[0];
     }
 
     // Update is called once per frame

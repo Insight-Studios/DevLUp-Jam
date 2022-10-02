@@ -5,6 +5,8 @@ using UnityEngine;
 public class Draw : MonoBehaviour
 {
     [SerializeField]
+    Texture2D cusor;
+    [SerializeField]
     GameObject pixelGO;
     [SerializeField]
     Vector2Int imageDim;
@@ -16,7 +18,7 @@ public class Draw : MonoBehaviour
 
     void Start()
     {
-        print(new Vector3());
+        Cursor.SetCursor(cusor, new Vector2(), CursorMode.Auto);
 
         spread = new List<Vector2Int>(21);
         for (int x = 0; x < 5; x++)
@@ -53,7 +55,6 @@ public class Draw : MonoBehaviour
 
     void Grey()
     {
-
         for (int i = (int)(imageDim.x * 0.2f); i <= (int)(imageDim.x * 0.8f); i++)
         {
             GreyNeibors(new Vector2Int(i, imageDim.y / 10));
@@ -104,10 +105,11 @@ public class Draw : MonoBehaviour
                 greys--;
                 if (greys == 0)
                 {
+                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
                     GameManager.Instance.NextLevel();
                 }
             }
-            pixels[pos.x + v.x, pos.y + v.y].gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+            pixels[pos.x + v.x, pos.y + v.y].gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.cyan;
         }
     }
 }
