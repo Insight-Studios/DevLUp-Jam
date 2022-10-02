@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public static GameObject UIMiniGame { get; private set; }
     public static NumberOne NumberOnePrefab { get => Instance.numberOnePrefab; }
 
+    IEnumerator nextLevelRoutine = null;
     int score = 0;
     double timer = 0;
 
@@ -98,13 +99,19 @@ public class GameManager : MonoBehaviour
 
         yield return null;
 
-        yield return StartLevel();        
+        yield return StartLevel();
+
+        nextLevelRoutine = null;
     }
 
     public void NextLevel()
     {
-        GetComponent<AudioSource>().Play();   
-        StartCoroutine(NextLevelRoutine());
+        if (nextLevelRoutine == null)
+        {
+            GetComponent<AudioSource>().Play();
+            nextLevelRoutine = NextLevelRoutine();
+            StartCoroutine(nextLevelRoutine);
+        }
     }
 
     void Pause()

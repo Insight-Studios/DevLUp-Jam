@@ -214,7 +214,7 @@ MonoBehaviour:
   - {fileID: 1072016064}
   - {fileID: 931258449}
   doorDelay: 1.5
-  winChance: 0.2
+  winChance: 0.05
 --- !u!4 &234819698
 Transform:
   m_ObjectHideFlags: 0

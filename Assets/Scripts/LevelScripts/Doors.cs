@@ -8,7 +8,7 @@ public class Doors : MonoBehaviour
 
     [SerializeField] Door[] doors;
     [SerializeField] float doorDelay = 0.5f;
-    [SerializeField] float winChance = 0.2f;
+    [SerializeField] float winChance = 0.05f;
 
     GameObject[] numbers;
     IEnumerator revealRoutine = null;
@@ -30,12 +30,6 @@ public class Doors : MonoBehaviour
             Destroy(numbers[i].GetComponent<NumberOne>());
             numbers[i].SetActive(false);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator Reveal()
@@ -89,6 +83,10 @@ public class Doors : MonoBehaviour
             {
                 numbers[0].transform.position = shuffledNumbers.ElementAt((doorIndex + 1) % doors.Length).transform.position;
                 shuffledNumbers.ElementAt((doorIndex + 1) % doors.Length).transform.position = door.transform.position;
+                winChance *= 2;
+            } else
+            {
+                winChance *= 2;
             }
 
             door.Open();
