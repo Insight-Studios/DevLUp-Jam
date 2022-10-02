@@ -4948,10 +4948,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4211339817393907157, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4278190335
-      objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_RootOrder
       value: 6

@@ -30,8 +30,8 @@ public class Run : MonoBehaviour
             vertExtent -= runnerBounds.extents.y;
 
             position -= Camera.main.transform.position;
-            position.x = Mathf.Clamp(position.x, -horzExtent, horzExtent);
-            position.y = Mathf.Clamp(position.y, -vertExtent, vertExtent);
+            position.x = Mathf.Clamp(position.x, -horzExtent - runnerBounds.center.x, horzExtent - runnerBounds.center.x);
+            position.y = Mathf.Clamp(position.y, -vertExtent - runnerBounds.center.y, vertExtent - runnerBounds.center.y);
             position += Camera.main.transform.position;
 
             runner.transform.position = position;

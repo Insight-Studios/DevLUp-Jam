@@ -550,6 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 811744143}
+  numberOneSize: 0.75
   ones: []
 --- !u!212 &876606934
 SpriteRenderer:

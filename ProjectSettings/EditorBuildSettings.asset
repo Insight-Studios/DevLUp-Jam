@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniGames/Find.unity
     guid: ce3f0137d7823e84f838889ba2010f16
   - enabled: 1
+    path: Assets/Scenes/MiniGames/Art.unity
+    guid: ce4ea296a9aa462418e9e9fa1c15af98
+  - enabled: 1
     path: Assets/Scenes/MiniGames/Countdown.unity
     guid: c62c469773d14ce40ad8aceac9543191
   - enabled: 1
@@ -39,11 +42,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniGames/TextWord.unity
     guid: c9145d9dff2f2b8479212301be5304de
   - enabled: 1
-    path: Assets/Scenes/MiniGames/Doors.unity
-    guid: d0fe597f82e0fbc469135ffe070dc295
-  - enabled: 1
     path: Assets/Scenes/MiniGames/Level.unity
     guid: 4d71cc74e81aca844829e4563e09bc02
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/Doors.unity
+    guid: d0fe597f82e0fbc469135ffe070dc295
   - enabled: 1
     path: Assets/Scenes/MiniGames/Blocks.unity
     guid: 4e50ecc3b904eb945a1f42b3013e09e7

@@ -7,6 +7,7 @@ public class Calculator : MonoBehaviour
 {
 
     [SerializeField] TextMeshPro display;
+    [SerializeField] float numberOneSize;
 
     public List<NumberOne> ones = new List<NumberOne>();
 
@@ -30,7 +31,7 @@ public class Calculator : MonoBehaviour
                     Quaternion.identity,
                     transform
                 ));
-                ones[ones.Count - 1].transform.localScale *= 0.5f;
+                ones[ones.Count - 1].transform.localScale *= numberOneSize;
                 i = value.IndexOf('1', i + 1);
             }
 
