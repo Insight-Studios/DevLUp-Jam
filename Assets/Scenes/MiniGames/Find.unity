@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6808719813402055656, guid: 9ce5c92cffbfd34418f425ea2cacca62, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6808719813402055656, guid: 9ce5c92cffbfd34418f425ea2cacca62, type: 3}
       propertyPath: m_LocalPosition.x
@@ -247,6 +247,10 @@ PrefabInstance:
     - target: {fileID: 5635585489476866250, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
       propertyPath: m_Name
       value: UI MiniGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635585489476866250, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6548856158731208880, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
       propertyPath: m_Pivot.x
@@ -435,7 +439,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3506372, y: 2.3067665}
+  m_Size: {x: 0.5, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &4211339816208314503
 MonoBehaviour:
@@ -467,7 +471,7 @@ TextMesh:
   m_FontSize: 28
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -490,7 +494,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -520,7 +524,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4211339816208314500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 1.2, z: 0}
+  m_LocalPosition: {x: 4.966, y: 1.142, z: 0}
   m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7785203717195342148}
@@ -534,7 +538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7785203717195342155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.06, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4211339816208314507}
@@ -560,7 +564,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -592,11 +596,11 @@ TextMesh:
   m_GameObject: {fileID: 7785203717195342155}
   m_Text: '578327642433253668735490442039629320559539
 
-    777639739387454877234989220979025629667652
+    7776397393874548772349892209790256296676523
 
     572256677342360453243247764798375540850302
 
-    829204799660366729607049590888486 
+    829204799660366729607049590888486.
     85674788
 
     558438397086506989483775676427262023079406
@@ -605,11 +609,11 @@ TextMesh:
 
     375055845336399922204004945300238704367782
 
-    386409670978395420738433695632903620707069
+    3864096709783954207384336956329036207070696
 
     650432803303078578454379892050566793856463
 
-    723398832838268597493332782538083982086492'
+    7233988328382685974933327825380839820864927'
   m_OffsetZ: 0
   m_CharacterSize: 0.25
   m_LineSpacing: 1
@@ -619,7 +623,7 @@ TextMesh:
   m_FontSize: 28
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295

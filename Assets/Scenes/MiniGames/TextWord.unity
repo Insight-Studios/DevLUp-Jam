@@ -144,11 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.78
+      value: 6.82
       objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.87
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -331,7 +331,7 @@ TextMesh:
   m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 0}
+  m_Font: {fileID: 12800000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -354,7 +354,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,7 +384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802187787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0.57, z: 0}
+  m_LocalPosition: {x: -3.49, y: 0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -503,7 +503,7 @@ TextMesh:
     of
     time I would have something to
 
-    show for it, but truly I felt al      .'
+    show for it, but truly I felt al    . .'
   m_OffsetZ: 0
   m_CharacterSize: 0.25
   m_LineSpacing: 1
@@ -513,7 +513,7 @@ TextMesh:
   m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 0}
+  m_Font: {fileID: 12800000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -536,7 +536,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5b5d74b93ac357f418e63e19449b3e9c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

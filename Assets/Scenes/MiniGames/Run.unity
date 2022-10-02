@@ -275,6 +275,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8733643902239931628, guid: 8ecbd3af5450b1b46a9733e1420a4407, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ecbd3af5450b1b46a9733e1420a4407, type: 3}
 --- !u!1001 &743682911
@@ -284,6 +288,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4211339817393907157, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
+      propertyPath: m_FontSize
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -331,6 +339,22 @@ PrefabInstance:
     - target: {fileID: 4211339817393907161, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_Name
       value: Number One
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211339817393907163, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211339817393907163, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
+      propertyPath: m_Size.y
+      value: 1.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211339817393907163, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211339817393907163, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
@@ -482,7 +506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee9cf8381d84be648a895b2ebd94fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runRadius: 5
   runner: {fileID: 780931085}
 --- !u!4 &2115976528
 Transform:
