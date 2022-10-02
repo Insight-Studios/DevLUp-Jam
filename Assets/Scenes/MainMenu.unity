@@ -425,10 +425,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI MiniGame
       objectReference: {fileID: 0}
-    - target: {fileID: 5635585489476866250, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6548856158731208880, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -512,18 +508,6 @@ PrefabInstance:
     - target: {fileID: 6548856158731208880, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7233074786970864533, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7233074786970864533, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7233074786970864533, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
