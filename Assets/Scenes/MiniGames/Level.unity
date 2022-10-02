@@ -250,15 +250,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5102893796538835145, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5635585489476866250, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
       propertyPath: m_Name
       value: UI MiniGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5635585489476866250, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6548856158731208880, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
       propertyPath: m_Pivot.x
@@ -344,10 +340,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7233074786970864533, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
-      propertyPath: m_Text
-      value: '  0'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55169b9d2fd135b478cec5ffebffb0ae, type: 3}
 --- !u!1001 &869788346
@@ -416,7 +408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4211339817393907157, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_FontSize
-      value: 44
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907157, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_Color.rgba
@@ -432,11 +424,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.558
+      value: -8.6
       objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.55
+      value: 4.62
       objectReference: {fileID: 0}
     - target: {fileID: 4211339817393907158, guid: bc6e086e76d4698459a4dd0c04e5a6f5, type: 3}
       propertyPath: m_LocalPosition.z
