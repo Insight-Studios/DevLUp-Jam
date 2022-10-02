@@ -5,6 +5,9 @@ using UnityEngine;
 public class FPS : MonoBehaviour
 {
     [SerializeField]
+    GameObject end;
+
+    [SerializeField]
     GameObject oneGO;
 
     [SerializeField]
@@ -40,6 +43,7 @@ public class FPS : MonoBehaviour
         {
             GameObject one = hit.collider.gameObject;
             one.GetComponentInChildren<MeshRenderer>().enabled = false;
+            one.GetComponent<BoxCollider>().enabled = false;
             one.GetComponent<ParticleSystem>().Play();
             one.GetComponent<AudioSource>().Play();
             Destroy(one, 6f);
@@ -60,6 +64,7 @@ public class FPS : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            end.SetActive(true);
             GameManager.Instance.NextLevel();
             return;
         }
