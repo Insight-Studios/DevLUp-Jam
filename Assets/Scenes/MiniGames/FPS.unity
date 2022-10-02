@@ -863,7 +863,7 @@ MonoBehaviour:
   - {fileID: 133620760}
   - {fileID: 1119734236}
   - {fileID: 1704936782}
-  lookSpeed: 6
+  lookSpeed: 2
   lookLimit: {x: 50, y: 30}
 --- !u!4 &1226273273
 Transform:

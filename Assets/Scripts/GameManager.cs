@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,6 +52,14 @@ public class GameManager : MonoBehaviour
 
         var levelNumber = UIMiniGame.transform.Find("LevelNumber").GetComponent<Text>();
         levelNumber.text = SceneManager.GetActiveScene().buildIndex > 1 ? (SceneManager.GetActiveScene().buildIndex - 1).ToString() : "";
+        if (levelNumber.text == "10")
+        {
+            levelNumber.text = "  0";
+        }
+        else if (levelNumber.text != "1")
+        {
+            levelNumber.text = levelNumber.text.Replace('1', Convert.ToChar(65533));
+        }
 
         yield return new WaitForSecondsRealtime(fadeTime);
 
