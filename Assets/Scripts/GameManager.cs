@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void Quit()
     {
+        print("Exiting game");
         Application.Quit();
     }
 
@@ -42,7 +43,6 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            print("Exiting game");
             Quit();
         }
     }
