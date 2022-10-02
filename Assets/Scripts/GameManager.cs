@@ -103,6 +103,7 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
+        GetComponent<AudioSource>().Play();   
         StartCoroutine(NextLevelRoutine());
     }
 

@@ -39,9 +39,10 @@ public class FPS : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out RaycastHit hit, 1000))
         {
             GameObject one = hit.collider.gameObject;
-            Destroy(one.transform.GetChild(0).gameObject);
+            one.GetComponentInChildren<MeshRenderer>().enabled = false;
             one.GetComponent<ParticleSystem>().Play();
-            Destroy(one, 1);
+            one.GetComponent<AudioSource>().Play();
+            Destroy(one, 6f);
 
             onesLeft--;
             if (onesLeft == 0)
